@@ -242,32 +242,32 @@ img {
   margin-bottom: 20px;
 }
 
-/* fiz essa classe .x para poder descolar o botão produtos do fundo preto de portifólio*/
+/* fiz essa classe .x para poder descolar o botão produtos do fundo preto de portfólio*/
 .x {
   padding-bottom: 25px;
 }
 
-/* Portifólio */
+/* Portfólio */
 
-.portifolio {
+.portfolio {
   width: 100%;
   background: #000;
   padding: 40px 0;
 }
 
-.portifolio .subtitulo {
+.portfolio .subtitulo {
   color: #fec63e;
 }
 
-.portifolio .subtitulo:after {
+.portfolio .subtitulo:after {
   background: #fec63e;
 }
 
-.portifolio_lista li:last-child {
+.portfolio_lista li:last-child {
   margin-top: 20px;
 }
 
-.portifolio .call p {
+.portfolio .call p {
   color: #fff;
 }
 
@@ -392,4 +392,40 @@ img {
   width: 100%;
   background: #fec63e;
   padding: 20px 0;
+}
+
+/* JAVASCRIPT */
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slides-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+.js [data-slides-nav] button.active {
+  background: #fec63e;
 }
